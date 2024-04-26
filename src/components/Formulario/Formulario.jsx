@@ -10,22 +10,16 @@ import Select from "../Select/Select";
 import Detalle from "./Detalle";
 import InputEspecie from "../InputEspecie/InputEspecie";
 
-// Creamos la función que obtiene los tipos de pokemon de la API.
+
 const getPokemonTypes = async () => {
   const response = await fetch("https://pokeapi.co/api/v2/type/");
   const data = await response.json();
   return data.results;
 };
 
-/**
- * Componente que muestra los inputs del formulario.
- *
- * @returns {JSX.Element}
- */
+
 const Formulario = () => {
-  // Obtenemos los tipos de pokemon de la API usando el hook useQuery. Obtenemos el resultado de la consulta
-  // y lo guardamos en la variable tipos. Además obtenemos las variables isLoading e isError para deshabilitar
-  // el input.
+
   const {
     data: tipos,
     isLoading,
@@ -71,7 +65,7 @@ const Formulario = () => {
                   name="tipoPokemon"
                   label="Tipo"
                   options={tipos}
-                  disabled={isLoading || isError} // Deshabilitamos el input si está cargando o si hay un error
+                  disabled={isLoading || isError} 
                 />
                 <Input
                   name="elementoPokemon"

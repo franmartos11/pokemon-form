@@ -19,14 +19,8 @@ const enviarFormulario = async (data) => {
   }
 };
 
-/**
- * Componente que muestra el detalle del formulario, con
- * la informde cada uno de los campos que han sido completados.
- *
- * @returns {JSX.Element}
- */
+
 const Detalle = () => {
-  // Utilizamos useMutation para enviar el formulario al servidor.
   const { data, isLoading, isError, mutate, isSuccess } =
     useMutation(enviarFormulario);
 

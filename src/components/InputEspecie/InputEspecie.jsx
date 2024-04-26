@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { ContextoFormulario } from "../../context/ContextoFormulario";
 
-// Debemos reemplazar este array por los datos provenientes de la API.
+
 const especies = [
   { name: "bulbasaur", url: "https://pokeapi.co/api/v2/pokemon-species/1/" },
   { name: "ivysaur", url: "https://pokeapi.co/api/v2/pokemon-species/2/" },

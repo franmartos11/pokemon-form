@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import propTypes from "prop-types";
 import { ContextoFormulario } from "../../context/ContextoFormulario";
 
-// Creamos el componente Select con los props que necesitamos para poder usarlo en el componente Formulario
 const Select = ({ name, label, options = [], disabled = false }) => {
   const { handleInputBlur } = useContext(ContextoFormulario);
 

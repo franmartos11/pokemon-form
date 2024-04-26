@@ -15,18 +15,10 @@ const Input = ({
 
   const [value, setValue] = useState(formulario[name] || "");
 
-  /**
-   * Función que se ejecuta al cambiar el valor del input.
-   *
-   * @param {Event} e
-   */
+  
   const onChange = (e) => setValue(e.target.value);
 
-  /**
-   * Función que se ejecuta al perder el foco del input.
-   *
-   * @param {Event} e
-   */
+ 
   const onBlur = (e) => {
     e.preventDefault();
 
